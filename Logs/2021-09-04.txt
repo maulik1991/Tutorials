@@ -1,0 +1,3 @@
+[INFO] 2021-09-04 08:50:05,482 Log System Initialized 
+[INFO] 2021-09-04 08:50:23,875 Test 
+[ERROR] 2021-09-04 08:50:23,953 Test 

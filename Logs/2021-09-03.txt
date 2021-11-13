@@ -1,0 +1,35 @@
+2021-09-03 20:24:20,189 [4] INFO  App  
+ Log System Initialized 
+ 
+2021-09-03 20:24:32,092 [4] INFO  App  
+ Test 
+ 
+2021-09-03 20:26:00,062 [10] INFO  App  
+ Log System Initialized 
+ 
+2021-09-03 20:26:00,102 [10] INFO  App  
+ Test 
+ 
+2021-09-03 20:26:00,113 [10] ERROR App  
+ Test 
+ 
+2021-09-03 21:17:44,279 [9] INFO  Log System Initialized 
+2021-09-03 21:17:44,327 [9] INFO  Test 
+2021-09-03 21:17:44,340 [9] ERROR Test 
+2021-09-03 21:18:37,792 [10] INFO  Test 
+2021-09-03 21:18:37,804 [10] ERROR Test 
+[INFO ] 2021-09-03 21:19:02,051 Log System Initialized 
+[INFO ] 2021-09-03 21:19:02,103 Test 
+[ERROR] 2021-09-03 21:19:02,190 Test 
+[INFO] 2021-09-03 21:19:54,739 Log System Initialized 
+[INFO] 2021-09-03 21:19:54,790 Test 
+[ERROR] 2021-09-03 21:19:54,805 Test 
+[INFO] 2021-09-03 21:25:15,119 Log System Initialized 
+[INFO] 2021-09-03 21:25:15,159 Test 
+[ERROR] 2021-09-03 21:25:15,174 Test 
+[INFO] 2021-09-03 21:59:21,215 Log System Initialized 
+[INFO] 2021-09-03 21:59:21,281 Test 
+[ERROR] 2021-09-03 21:59:21,301 Test 
+[INFO] 2021-09-03 22:12:37,815 Log System Initialized 
+[INFO] 2021-09-03 22:12:37,865 Test 
+[ERROR] 2021-09-03 22:12:37,878 Test 

@@ -1,0 +1,74 @@
+﻿@model Tutorials.Models.ViewModels.ArticleViewModel
+@{
+    ViewData["Title"] = Model.SectionDetailDto.SectionName;
+}
+<style>
+    .sidebar {
+        /*position: fixed;*/
+        /*top: 51px;*/
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        /*padding: 20px;*/
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        /*border-right: 1px solid #eee;*/
+    }
+
+
+    /*.sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+        .sidenav a {
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }*/
+
+    /*.main {
+        margin-left: 200px;
+    }*/
+</style>
+<div class="col-sm-12">
+    @*<p>
+        </p>*@
+    <div class="row col-sm-12">
+        @*<div class="card col-sm-3"><a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+            </div>*@
+        <div class="card col-sm-3 sidebar">
+            <ul class="nav nav-sidebar">
+                @foreach (var item in Model.ArticleDetailsDtos)
+                {
+                   <li class="col-sm-12"><a href="@Url.ActionLink("article",null, new { desc = item.SectionName,id = item.ArticleId, id2 = item.Id})">@item.SectionMenuName</a></li>
+                }
+                @*<li class="active col-sm-12"><a href="#">Overview</a></li>
+                <li class="col-sm-12"><a href="#">Reports</a></li>
+                <li class="col-sm-12"><a href="#">Analytics</a></li>
+                <li class="col-sm-12"><a href="#">Export</a></li>*@
+            </ul>
+        </div>
+        <div class="col-sm-9" style="background-color:transparent">
+            <h3>@Model.SectionDetailDto.SectionName</h3>
+            <p>@Html.Raw(Model.SectionDetailDto.SectionTheory)</p>
+        </div></div>
+</div>

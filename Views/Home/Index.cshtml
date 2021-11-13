@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <div class="col-sm-12">
+        <h1 class="text-center display-4">Welcome Developers</h1>
+        <p>
+            We are community of developers who are willing to teach programming languages and web development in a simple way as well
+            as we will provide advanced tutorials as well for better understanding of each concept for any topic.
+        </p>
+        <h5>Technologies</h5>
+        <div class="row col-sm-12">
+            <div class="card col-sm-3">
+                <br />
+                <img class="card-img-top" src="~/Images/Core.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ASP.NET Core</h5>
+                    <p class="card-text">@*.NET Core is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform successor to .NET Framework*@</p>
+                    <a href="@Url.ActionLink("article",null, new { desc = "ASP.NET Core",id = 1, id2 = 1})" class="btn btn-primary">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </div>
